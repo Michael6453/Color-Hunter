@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Color Hunter</h1>
+    <div class="game-container">
+        <div class="score-container">
+            <div class="scoreboard">
+                Score: <span data-testid="score">0</span>
+            </div>
+            <div>
+                <p style="font-size: 20px;">🏆</p>
+            </div>
+        </div>
+       
+
+        <p data-testid="gameInstructions" class="instruction">Guess the correct color!</p>
+
+        <div class="loader" data-testid="loader" style="display: none;"></div>
+
+        <div class="color-box" data-testid="colorBox"></div>
+
+        <p class="instruction">Click on the correct color</p>
+
+        <p data-testid="gameStatus" class="game-status"></p>
+
+        <div class="color-options">
+            <!-- Buttons will be generated dynamically -->
+        </div>
+
+       
+
+    
+
+        <button data-testid="newGameButton" class="new-game-btn">New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
